@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color picket </title>
+    <style>
+        h1{
+            text-transform: capitalize;
+        }
+        label{
+            font-size: 30px;
+        }
+        .colorPreveiw{
+            width: 250px;
+            height: 200px;
+            border: 2px solid black;
+            margin-block: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        button{
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> interactive color picker</h1>
+    <label for="selectColor">choose a color:</label>
+    <input type="color"  id="selectColor">
+    <div class="colorPreveiw">
+        <p id="text">color Preveiw</p>
+    </div>
+    <h2>color history</h2>
+    <ul id="colors">
+
+    </ul>
+    <button type="button" id="clearhistory"> clear history</button>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
