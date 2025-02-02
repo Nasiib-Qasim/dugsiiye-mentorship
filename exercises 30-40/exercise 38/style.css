@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+}
+
+.brandTitle{
+    font-size: 2rem;
+    line-height: 60px;
+}
+
+.navbar-links{
+    height: 100%;
+}
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    line-height: 60px;
+    margin-top: 8px;
+}
+.navbar-links ul li {
+    padding-right: 20px;
+}
+
+.navbar-links ul li a{
+     color: white;
+     text-decoration: none;
+     text-transform: capitalize;
+     font-size: 18px;
+     display: block;
+}
+
+
+.toggleBtn{
+    /* background-color: red;    */
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 35px;
+    height: 26px;
+    display: none;
+    flex-direction: column;
+    /* background-color: red; */
+    gap: 3px;
+}
+.toggleBtn .bar{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.navbar-links ul li a:hover{
+    background-color: #444;
+}
+
+.sections{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:50px;
+    /* margin-bottom:10px; */
+}
+#home{
+    color: white;
+    background-color: red;
+}
+#about{
+    color: white;
+    background-color: blue;
+    height: 100vh;
+}
+#services{
+    color: white;
+    background-color: black;
+    height: 100vh;
+}
+#portfolio{
+    color: white;
+    background-color: green;
+    height: 100vh;
+}
+#blog{
+    color: black;
+    background-color: yellow;
+    height: 100vh;
+}
+#careers{
+    color: black;
+    background-color: aqua;
+    height: 100vh;
+}
+#contact{
+    color: white;
+    background-color: brown;
+    height: 100vh;
+}
+@media (max-width:768px) {
+   .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .navbar-links{
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in,opacity 0.5s ease-in-out;
+   }
+   .navbar-links ul {
+    width: 100%;
+    /* background-color: aqua; */
+    flex-direction: column;
+    line-height: 30px;
+   }
+   .navbar-links ul li{
+    width: 100%;
+    text-align: center;
+   }
+   .navbar-links ul li a{
+    width: 100%;
+    font-size: 20px;
+   }
+   .toggleBtn{
+    display: flex;
+   }
+   .navbar.active .bar:nth-child(2){
+    display: none;
+   }
+   .navbar.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+   }
+   .navbar.active .bar:nth-child(3){
+    transform:   rotate(-45deg);
+   }
+    .navbar.active  .navbar-links{
+        max-height: 300px;
+        overflow: hidden;
+        opacity: 1;
+        transition: max-height 0.5s ease-in,opacity 0.5s ease-in-out;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <div class="container">
+        <h1>Language Translator</h1>
+        <form class="form-translator" id="form-translator">
+            <label for="from-Language">From:</label>
+            <select name="from-Language" id="selected-from-Language">
+            </select>
+            <label for="to-Language">To:</label>
+            <select name="to-Language" id="selected-to-Language">
+                
+            </select>
+            <label for="textarea">Text to Translate</label>
+            <textarea name="" id="text-translate" placeholder="enter text here"></textarea>
+            <button type="submit"> translate</button>
+        </form>
+        <div class="display-result">
+            <strong>Translated Text:</strong>
+            <p id="result-tranltator"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 229, 229);
+    height: 100vh;
+}
+.container{
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0,0.5);
+}
+.container h1{
+    color:  #333;
+    font-size: 38px;
+    text-transform: capitalize;
+}
+
+.form-translator{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.container label{
+    font-size: 20px;
+    color: black;
+    margin: 8px 0;
+}
+
+.form-translator select{
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+.form-translator select:focus{
+    outline: none;
+    border: 2px solid #333;
+}
+
+#text-translate{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid black;
+    inline-size: auto;
+    resize: none;
+}
+
+.form-translator button{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: rgb(59, 236, 59);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.form-translator button:hover{
+    background-color: rgb(35, 181, 35);
+    transition: all 0.3s ease-out;
+}
+.display-result{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.display-result strong{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.display-result p{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
